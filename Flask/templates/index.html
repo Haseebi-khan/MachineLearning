@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin-top: 50px;
+        }
+        form {
+            display: inline-block;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input[type="text"] {
+            margin: 5px 0;
+            padding: 8px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: violet;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: purple;
+        }
+        h4 {
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sales Prediction</h1>
+    <h3>Enter Ad Budget</h3>
+
+    <form action="{{ url_for('predict') }}" method="post">
+        <label for="tv">TV:</label><br>
+        <input type="text" id="tv" name="tv" required><br>
+
+        <label for="radio">Radio:</label><br>
+        <input type="text" id="radio" name="radio" required><br>
+
+        <label for="newspaper">Newspaper:</label><br>
+        <input type="text" id="newspaper" name="newspaper" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    <br><br>
+    <h4>{{ prediction_text }}</h4>
+
+</body>
+</html>
