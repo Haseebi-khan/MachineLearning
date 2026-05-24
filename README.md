@@ -12,7 +12,7 @@ This repo showcases my journey from understanding the basics to building and dep
 - Explorations in **Deep Learning (ANN, CNN, RNN)**
 - **API Deployments** using Flask & Streamlit
 - **Assignments & Real-World Case Studies**
-
+- Complete Implementation Hand On ML by Aurélien Géron
 ---
 
 ## 🧩 Topics Covered
