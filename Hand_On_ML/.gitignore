@@ -19,12 +19,12 @@ __pycache__/
 # Jupyter
 # ======================
 .ipynb_checkpoints/
+*.keras
 
 # ======================
 # Generated outputs
 # ======================
 eda_plots/
-
 # ======================
 # Virtual environments
 # ======================
